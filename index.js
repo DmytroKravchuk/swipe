@@ -28,15 +28,15 @@
 
         if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
             if ( xDiff > 0 ) {
-                this.startEl.dispatchEvent(swipeRight)
-            } else {
                 this.startEl.dispatchEvent(swipeLeft)
+            } else {
+                this.startEl.dispatchEvent(swipeRight)
             }
         } else {
             if ( yDiff > 0 ) {
-                this.startEl.dispatchEvent(swipeBottom)
-            } else {
                 this.startEl.dispatchEvent(swipeTop)
+            } else {
+                this.startEl.dispatchEvent(swipeBottom)
             }
         }
         this.x = null;
